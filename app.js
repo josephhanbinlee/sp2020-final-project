@@ -20,10 +20,13 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const indexRoute = require("./routes/index.js");
+const createScrapbookRoute = require("./routes/createScrapbook.js");
+
 
 // Serve Static Files
 app.use("/static", express.static("public"));
 // Routing in Express
 app.use("/", indexRoute);
+app.use("/create-scrapbook", createScrapbookRoute);
 
 app.listen(port, () => console.log("API is ready!"))

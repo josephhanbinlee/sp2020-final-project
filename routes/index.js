@@ -16,6 +16,7 @@ router.get("/", (req, res) => {
   "Origin, X-Requested-With, Content-Type, Accept");
     // Create array
     const postsArray = [];
+    const memoriesArray = [];
     // Get posts
     posts
         .get()
