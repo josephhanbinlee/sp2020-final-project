@@ -10,7 +10,7 @@ const posts = db.collection("posts");
 
 // Get single blog post 
 router.get("/", (req, res) => {
-    res.send("Please Include an ID"); })
+    res.send("Please Include an ID") })
 
 router.get("/:id", (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
