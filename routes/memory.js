@@ -5,6 +5,10 @@ const firebase = require("firebase");
 
 // Initialize Firestore Database
 const db = firebase.firestore()
+
+// get timestamp
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+
 // Reference to collection
 const posts = db.collection("posts");
 
